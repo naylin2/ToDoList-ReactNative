@@ -11,6 +11,7 @@ export default function App() {
       <StatusBar style="auto" />
       <Text>Enter name:</Text>
       <TextInput
+        multiline
         placeholder='e.g. John Doe'
         style={styles.input}
         onChangeText={(value) => setName(value)} />
@@ -18,6 +19,7 @@ export default function App() {
       <Text>Enter age:</Text>
       <TextInput
         placeholder='e.g. 99'
+        keyboardType='numeric'
         style={styles.input}
         onChangeText={(value) => setAge(value)} />
 
